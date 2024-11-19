@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* ||  RESET  || */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* ||  UTILITY CLASSES  || */
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* ||  HEADER AND FOOTER || */
+
+header,
+footer {
+  background-color: #1b1a55;
+  color: whitesmoke;
+  position: sticky;
+}
+header {
+  top: 0;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Comforter Brush";
+}
+footer {
+  bottom: 0;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  opacity: 0.7;
+}
+
+/* ||  BODY  || */
+
+body {
+  background-color: #070f2b;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.choices-comp {
+  position: relative;
+  left: 2rem;
+  margin-top: 4.9rem;
+  background-color: #535c916c;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choices {
+  position: relative;
+  right: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 4.9rem;
+}
+
+.choice {
+  background-color: #535c91;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice:hover {
+  cursor: pointer;
+
+  scale: 1.1;
+}
+
+img {
+  height: 130px;
+  width: 130px;
+  object-fit: contain;
+  border-radius: 30%;
+}
+
+.score-board {
+  margin-top: 100px;
+  color: #c4e4ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 4rem;
+  font-size: 1rem;
+  font-family: "Press Start 2P";
+  font-weight: 700;
+  user-select: none;
+}
+
+.score1 {
+  position: relative;
+  right: 13rem;
+}
+.score2 {
+  position: relative;
+  left: 20rem;
+}
+
+#user-points,
+#comp-points {
+  font-size: 3rem;
+}
+
+.msg-container {
+  margin: 4rem 0 4rem 0;
+}
+
+#msg {
+  font-family: "Press Start 2P";
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #c4e4ff;
+  background-color: #535c91;
+  display: inline;
+  border-radius: 20px;
+  box-shadow: rgba(67, 80, 150, 0.56) 0px 22px 70px 4px;
+  user-select: none;
+}
